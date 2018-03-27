@@ -9,11 +9,9 @@ buildscript {
 }
 apply plugin: 'net.minecraftforge.gradle.forge'
 
-apply plugin: 'java-library'
-
 
 version = "1.0"
-group = "com.demon.tickthreading" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = "tick.threading" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "tickthreading"
 
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
@@ -35,10 +33,6 @@ minecraft {
 }
 
 dependencies {
-   implementation('org.ow2.asm:asm:6.1') {
-   }
-    implementation('org.ow2.asm:asm-util:6.1') {
-    }
 
 }
 
